@@ -18,11 +18,16 @@ export const Logo = styled.div`
   font-size: 25px; 
   display: flex;
   align-items: center;
+
+  h4{
+      margin-left: 10px;
+  }
 `;
 
 export const Menu = styled.ul`
   list-style: none;
   display: flex;
+
 
   @media (max-width: 768px) {
     display: none;
@@ -32,14 +37,16 @@ export const Menu = styled.ul`
 export const Item = styled.li``;
 
 export const Link = styled.a`
-  text-decoration: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 22px;
+  margin-left: 30px;
+/* identical to box height */
   color: #1F1534;
-  padding-left: 20px;
-  
-  :nth-child(1){
-    font-weight: bolder;
-  }
-
+  opacity: 1;
+  /* hover effect*/
   :hover {
     text-decoration: underline;
   }
@@ -94,6 +101,10 @@ export const OverlayMenu = styled.ul`
     font-size: 25px;
     margin: 25px 0px;
     transition: opacity 0.4s ease-in-out;
+    color: #fff;
   }
-
 `;
+
+export const MobileLink=styled.a`
+    color: #fff;
+`
