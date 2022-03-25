@@ -5,7 +5,7 @@ export default function Default({children}) {
     <div>
         <Header/>
         <main>
-        {children}
+        {  children}
         </main>
     </div>
   )
