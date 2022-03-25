@@ -12,13 +12,18 @@ const  HeroMain=styled.div`
     margin: auto;
     margin-top: 60px;
     height: auto;
+    @media (max-width:500px){
+        width: 90%;
+    }
 `
 const SideBar=styled.div`
-   
+    width: 100%;
 `
 const RightBar=styled.div`
-    width: 90%;
-    margin: auto;
+    @media (max-width:500px){
+        width: 100%;
+
+    }
 `
 export default function Hero() {
 
