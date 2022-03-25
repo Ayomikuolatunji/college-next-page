@@ -8,16 +8,35 @@ const HeaderStyle=styled.header`
     padding: 2em 1em;
     background-color: #fff;
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
+    width: 80%;
+    margin: auto;
+    .college-logo{
+        display: flex;
+        align-items: center;
+        Img{
+            width: 44px;
+            height: 44px;
+        }
+    }
+    .college-logo Img{
+            width: 44px;
+            height: 44px;
+    }
+   
 `
 const Navbar=styled.header`
     display:flex;
-    justify-betwween:space-between
-
-    li{
-        list-style:none;
-    }
+    justify-content:space-between;
 `
+const Item=styled.li`
+     list-style:none;
+     margin-left:20px;
+     color: #1F1534;
+`
+const items=['Home',"Who Are We", "About us", "Contact Us"]
+
+ 
 export default function Header() {
   return (
      <HeaderStyle>
@@ -25,15 +44,13 @@ export default function Header() {
                <Image
                   src={logo}
                   alt={"college-logo"}
-                  height={70}
-                  width={70}
                />
+               <p>College</p>
           </div>
            <Navbar>
-            <li>Home</li>
-            <li>Who Are wwe</li>
-            <li>About Us</li>
-            <li>Contact US</li>
+                {items.map(item=>{
+                    return  <Item>{item}</Item>
+                })}
            </Navbar>
      </HeaderStyle>
   )
