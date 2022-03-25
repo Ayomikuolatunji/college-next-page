@@ -20,9 +20,9 @@ const Header = () => {
              <h4>College</h4>
         </Logo>
         <Menu>
-          {navData?.map((item,i)=>{
-              return  <Item>
-                <Link target="#" href="#" key={i}>
+          {navData?.map((item,index)=>{
+              return  <Item key={index}>
+                <Link target="#" href="#" >
                     {item}
                 </Link>
             </Item>
