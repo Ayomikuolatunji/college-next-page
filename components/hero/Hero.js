@@ -2,12 +2,14 @@ import React from 'react';
 import styled from "styled-components";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import Slider from './Sliders';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 const  HeroMain=styled.div`
     width: 80%;
     margin: auto;
-    background-color: green;
     margin-top: 60px;
     height: auto;
 `
@@ -19,18 +21,7 @@ const RightBar=styled.div`
     margin: auto;
 `
 export default function Hero() {
-    const sliders=[
-        {
-          topic:"The Best of College Education at your finger tips",
-          text:"Get the best of academic experience all at your finger tips from recieving of lecture to getting of solutions at complex questions.",
-          btn:"play store"
-        },
-        {
-          topic:"The Best of College Education at your finger tips",
-          text:"Get the best of academic experience all at your finger tips from recieving of lecture to getting of solutions at complex questions.",
-           btn:"play store"
-        }
-    ]
+
 
   return (
        <HeroMain>
@@ -38,27 +29,12 @@ export default function Hero() {
             <Grid container spacing={2} columns={12}>
                 <Grid item xs={12} md={6}>
                      <SideBar>
-                          <div>
-                            <h1>
-                            </h1>
-                            <p>
-                                </p>
-                                <button>Play store</button>
-                            </div>
-                            <div>
-                            <h1>The Best of College
-                             Education at your finger tips
-                            </h1>
-                            <p>Get the best of academic experience all at your finger tips from recieving of lecture to getting of solutions at complex
-                            questions.
-                            </p>
-                            <button>Apple store</button>
-                            </div>
+                          <Slider/>
                      </SideBar>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <RightBar>
-
+                       cfewdfw
                     </RightBar>
                 </Grid>
             </Grid>

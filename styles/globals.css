@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-prev{
+    display: none !important;
+}
+
+.slick-next{
+    display: none !important;
+}
