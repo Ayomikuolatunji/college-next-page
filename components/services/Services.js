@@ -78,7 +78,11 @@ const Item=styled.div`
     background: #FFFFFF;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
     border-radius: 20px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 `
 export default function Services() {
   return (
@@ -96,26 +100,37 @@ export default function Services() {
                         <Item>
                            <Image
                               src={sa}
+                              alt="img"
                            />
                            <h2>Quality</h2>
                            <p>
                            We ensure that all our course contents are screened to the maximum to ensure that the best and only the best quality is shown.
+                           </p>
+                        </Item>
+                    </Grid>
+                    <Grid h1 xs={6} md={4}>
+                      <Item>
+                        <Image
+                              src={sb}
+                              alt={"img"}
+                           />
+                           <h2>24/7 Support</h2>
+                           <p>
+                           Customer service is extremely important in bringing you top notch educational services.
                            </p>
                         </Item>
                     </Grid>
                     <Grid h1 xs={6} md={4}>
                     <Item>
                         <Image
-                              src={sa}
+                              src={sc}
+                              alt={"img"}
                            />
-                           <h2>Quality</h2>
+                           <h2>Quick Response</h2>
                            <p>
-                           We ensure that all our course contents are screened to the maximum to ensure that the best and only the best quality is shown.
+                           We ensure that all our course contents are screened to the maximum to ensur that the best and only the best quality is shown.
                            </p>
                         </Item>
-                    </Grid>
-                    <Grid h1 xs={6} md={4}>
-                        <h1>xs=6 md=4</h1>
                     </Grid>
                  </Grid>
               </Box>
