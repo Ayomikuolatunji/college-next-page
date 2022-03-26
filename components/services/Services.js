@@ -3,11 +3,11 @@ import styled from "styled-components";
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
 import Image from 'next/image';
-import sa from "../../public/img/s (1).png"
-import sb from "../../public/img/s(2).png"
-import sc from "../../public/img/s(3).png"
-import sBg from "../../public/img/sBg.png"
-
+import sa from "../../public/img/s (1).png";
+import sb from "../../public/img/s(2).png";
+import sc from "../../public/img/s(3).png";
+import sBg from "../../public/img/sBg.png";
+import DesignImg from "../../public/img/element.png";
 
 
 const ServicePage=styled.div`
@@ -167,6 +167,9 @@ export default function Services() {
                     </Grid>
                  </Grid>
               </Box>
+            <div className="design-box absolute sm:top-0 sm:right-0 -z-10 sm:opacity-100  opacity-50 sm:-mt-12 sm:ml-24">
+            <Image src={DesignImg} alt={"design-img"} className="abolute"/>
+            </div>
          </ContentGrid>
          <div className="bg-design absolute top-0 -z-10 sm:bottom-0 sm:left-0 sm:mt-64">
             <Image
