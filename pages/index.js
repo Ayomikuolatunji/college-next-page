@@ -16,7 +16,7 @@ export default function Home() {
           <DefaultHeader>
           
            </DefaultHeader>
-           <div className="design-box absolute top-0 mt-64">
+           <div className="design-box absolute sm:top-0 sm:left-0 right-0 top-0 -z-10 sm:mt-64 mt-80">
               <Image src={DesignImg} alt={"design-img"} className="abolute"/>
           </div>
          </body>

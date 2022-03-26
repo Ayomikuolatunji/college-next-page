@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import rightImg from "../../public/img/unsplash_-2vD8lIhdnw.png"
+import vector from "../../public/img/Vector.png"
 
 
 const  HeroMain=styled.div`
@@ -24,10 +25,8 @@ const SideBar=styled.div`
     width: 100%;
 `
 const RightBar=styled.div`
-    @media (max-width:500px){
         width: 100%;
-
-    }
+        position: relative;
 `
 export default function Hero() {
 
@@ -43,7 +42,12 @@ export default function Hero() {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <RightBar>
-                       <Image src={rightImg} alt="img-right" className='max-w-full' />
+                       <div className="over-lap z-10">
+                          <Image src={rightImg} alt="img-right" className='max-w-full' />
+                       </div>
+                       <div className="back-img absolute -z-10 top-0 right-0">
+                         <Image src={vector} alt="img-right" className='max-w-full' />
+                       </div>
                     </RightBar>
                 </Grid>
             </Grid>
