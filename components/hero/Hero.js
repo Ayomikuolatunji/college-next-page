@@ -6,7 +6,6 @@ import Slider from './Sliders';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
-import DesignImg from "../../public/img/element.png"
 import rightImg from "../../public/img/unsplash_-2vD8lIhdnw.png"
 
 
@@ -15,6 +14,7 @@ const  HeroMain=styled.div`
     margin: auto;
     margin-top: 60px;
     height: auto;
+    position: relative;
     @media (max-width:500px){
         width: 90%;
         margin-top: 20px;
@@ -48,9 +48,6 @@ export default function Hero() {
                 </Grid>
             </Grid>
         </Box>
-        <div className="design-box">
-            <Image src={DesignImg} alt={"design-img"} className="abolute"/>
-        </div>
        </HeroMain>
   )
 }
