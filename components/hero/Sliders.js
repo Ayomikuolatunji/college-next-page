@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import Styled from "styled-components"
+import styled from "styled-components"
 import {FcNext,FcPrevious} from "react-icons/fc"
 import {BsApple} from "react-icons/bs"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 
-const Content=Styled.div`
+const Content=styled.div`
 
   h3{
     font-family: 'Lato';
@@ -47,7 +47,7 @@ const Content=Styled.div`
       color:#fff;
   }
 `
-const PrevNext=Styled.div`
+const PrevNext=styled.div`
     
 `
 export default class PreviousNextMethods extends Component {
