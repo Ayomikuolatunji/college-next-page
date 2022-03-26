@@ -11,14 +11,14 @@ import sBg from "../../public/img/sBg.png"
 
 
 const ServicePage=styled.div`
-   width: 80%;
+    width: 80%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 90px;
     height: auto;
     position: relative;
     @media (max-width:500px){
         width: 90%;
-        margin-top: 20px;
+        margin-top: 60px;
     }
 `
 
@@ -72,9 +72,9 @@ const ContentGrid=styled.div`
       width: 70%;
       margin-left: auto;
       margin-right: auto;
-
+      position: relative;
       @media (max-width:640px){
-          width: 80%;
+          width: 70%;
       }
 `
 const Item=styled.div`
@@ -122,7 +122,7 @@ export default function Services() {
          </Header>
          <ContentGrid>
               <Box>
-                 <Grid container spacing={2}>
+                 <Grid container spacing={4}>
                     <Grid h1 xs={12} md={4}>
                         <Item>
                            <Image
@@ -168,6 +168,14 @@ export default function Services() {
                  </Grid>
               </Box>
          </ContentGrid>
+         <div className="bg-design absolute top-0 -z-10 sm:bottom-0 sm:left-0 sm:mt-64">
+            <Image
+            src={sBg}
+            alt={'image'}
+            width={400}
+            height={400}
+            />
+        </div>
     </ServicePage>
   )
 }
