@@ -3,7 +3,8 @@ import Slider from "react-slick";
 import Styled from "styled-components"
 import {FcNext,FcPrevious} from "react-icons/fc"
 import {BsApple} from "react-icons/bs"
-import playstore from "../../public/img/playstore.png"
+
+
 const Content=Styled.div`
 
   h3{
@@ -15,6 +16,11 @@ const Content=Styled.div`
     /* or 124% */
     color: #1F1534;
     mix-blend-mode: normal;
+
+    @media (max-width:500px){
+      line-height:36px;
+      font-size:35px;
+    }
   }
   p{
     font-family: 'Lato';
@@ -26,6 +32,11 @@ const Content=Styled.div`
     margin-bottom:50px;    /* or 152% */
     color: #7D7987;
     mix-blend-mode: normal;
+
+    @media (max-width:500px){
+      line-height:25px;
+      font-size:15px;
+    }
   }
   .playstore{
       padding: 10px 25px;
@@ -57,21 +68,21 @@ export default class PreviousNextMethods extends Component {
       slidesToScroll: 1
     };
     return (
-      <div>
+      <div className="sm:mt-24">
         <Slider ref={c => (this.slider = c)} {...settings}>
           <Content key={1}>
             <h3>The Best of College Education at your finger tips</h3>
               <p className="">Get the best of academic experience all at your finger tips from recieving of lecture to getting of solutions at complex questions.",
               btn:"play store"
               </p>
-              <button className="playstore"><img src={playstore} className="inline"/>Playstore</button>
+              <button className="playstore"><BsApple className="inline mb-1 mr-1"/>Playstore</button>
           </Content>
           <Content key={2}> 
           <h3>The Best of College Education at your finger tips</h3>
               <p>Get the best of academic experience all at your finger tips from recieving of lecture to getting of solutions at complex questions.",
               btn:"play store"
               </p>
-              <button className="playstore"><BsApple className="inline"/>Applestore</button>
+              <button className="playstore"><BsApple className="inline mb-1 mr-1"/>Applestore</button>
           </Content>
         </Slider>
         <PrevNext  className="mt-5 flex justify-between w-12">

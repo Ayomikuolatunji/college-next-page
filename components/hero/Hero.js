@@ -5,6 +5,8 @@ import Grid from '@mui/material/Grid';
 import Slider from './Sliders';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
+import rightImg from "../../public/img/unsplash_-2vD8lIhdnw.png"
 
 
 const  HeroMain=styled.div`
@@ -14,6 +16,7 @@ const  HeroMain=styled.div`
     height: auto;
     @media (max-width:500px){
         width: 90%;
+        margin-top: 20px;
     }
 `
 const SideBar=styled.div`
@@ -39,7 +42,7 @@ export default function Hero() {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <RightBar>
-                       cfewdfw
+                       <Image src={rightImg} alt="img-right" />
                     </RightBar>
                 </Grid>
             </Grid>
