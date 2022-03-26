@@ -1,5 +1,7 @@
-import React from 'react'
-import styled from "styled-components"
+import React from 'react';
+import styled from "styled-components";
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 
 
 const ServicePage=styled.div`
@@ -68,6 +70,7 @@ export default function Services() {
                    We provide the best and quality courses for users, we believe strongly on giving users value hence we ensure to stand by our principles and give only the best of service
                 </p>
          </Header>
+
     </ServicePage>
   )
 }
