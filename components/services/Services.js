@@ -6,6 +6,7 @@ import Image from 'next/image';
 import sa from "../../public/img/s (1).png"
 import sb from "../../public/img/s(2).png"
 import sc from "../../public/img/s(3).png"
+import sBg from "../../public/img/sBg.png"
 
 
 
@@ -71,6 +72,10 @@ const ContentGrid=styled.div`
       width: 70%;
       margin-left: auto;
       margin-right: auto;
+
+      @media (max-width:640px){
+          width: 80%;
+      }
 `
 const Item=styled.div`
     width: 350px;
@@ -83,6 +88,28 @@ const Item=styled.div`
     justify-content: center;
     align-items: center;
     padding: 10px;
+
+    @media (max-width:640px){
+        margin-top: 10px;
+    }
+    h2{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 56px;
+        color: #1F1534;
+        mix-blend-mode: normal;
+     }
+    p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        color: #7D7987;
+        mix-blend-mode: normal;
+    }
 `
 export default function Services() {
   return (
@@ -96,11 +123,13 @@ export default function Services() {
          <ContentGrid>
               <Box>
                  <Grid container spacing={2}>
-                    <Grid item xs={6} md={4}>
+                    <Grid h1 xs={12} md={4}>
                         <Item>
                            <Image
                               src={sa}
                               alt="img"
+                              width={95}
+                              height={95}
                            />
                            <h2>Quality</h2>
                            <p>
@@ -108,11 +137,13 @@ export default function Services() {
                            </p>
                         </Item>
                     </Grid>
-                    <Grid h1 xs={6} md={4}>
+                    <Grid h1 xs={12} md={4}>
                       <Item>
                         <Image
                               src={sb}
                               alt={"img"}
+                              width={95}
+                              height={95}
                            />
                            <h2>24/7 Support</h2>
                            <p>
@@ -120,11 +151,13 @@ export default function Services() {
                            </p>
                         </Item>
                     </Grid>
-                    <Grid h1 xs={6} md={4}>
+                    <Grid h1 xs={12} md={4}>
                     <Item>
                         <Image
                               src={sc}
                               alt={"img"}
+                              width={95}
+                              height={95}
                            />
                            <h2>Quick Response</h2>
                            <p>
