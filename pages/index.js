@@ -3,7 +3,7 @@ import DefaultHeader from '../layout/Default';
 import Services from '../components/services/Services';
 import Hero from '../components/hero/Hero';
 import BoxFloating from '../layout/BoxFloating';
-
+import Process from '../components/process/Process';
 export default function Home() {
   return (
     <div>
@@ -14,8 +14,9 @@ export default function Home() {
       </Head>
          <body>
           <DefaultHeader>
-             <Hero/>
+            <Hero/>
             <Services/>
+            <Process/>
                {/* floating containers */}
             <BoxFloating/>
           </DefaultHeader>
