@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import Styled from "styled-components"
 import {FcNext,FcPrevious} from "react-icons/fc"
 import {BsApple} from "react-icons/bs"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Content=Styled.div`
