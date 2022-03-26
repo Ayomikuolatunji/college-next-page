@@ -6,6 +6,7 @@ import Slider from './Sliders';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
+import DesignImg from "../../public/img/element.png"
 import rightImg from "../../public/img/unsplash_-2vD8lIhdnw.png"
 
 
@@ -42,11 +43,14 @@ export default function Hero() {
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <RightBar>
-                       <Image src={rightImg} alt="img-right" />
+                       <Image src={rightImg} alt="img-right" className='max-w-full' />
                     </RightBar>
                 </Grid>
             </Grid>
         </Box>
+        <div className="design-box">
+            <Image src={DesignImg} alt={"design-img"} className="abolute"/>
+        </div>
        </HeroMain>
   )
 }
