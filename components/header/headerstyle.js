@@ -7,6 +7,12 @@ export const Nav = styled.nav`
   width: 80%;
   margin: auto;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
   align-items: center;
 
   @media (max-width:500px){
