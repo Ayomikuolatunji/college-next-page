@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
+import { Grid } from '@mui/material';
+import Image from 'next/image';
+import sa from "../../public/img/s (1).png"
+import sb from "../../public/img/s(2).png"
+import sc from "../../public/img/s(3).png"
+
 
 
 const ServicePage=styled.div`
@@ -61,6 +66,20 @@ const Header=styled.div`
     }
 
 `
+const ContentGrid=styled.div`
+      margin-top: 50px;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+`
+const Item=styled.div`
+    width: 350px;
+    height: 354px;
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+
+`
 export default function Services() {
   return (
     <ServicePage>
@@ -70,7 +89,37 @@ export default function Services() {
                    We provide the best and quality courses for users, we believe strongly on giving users value hence we ensure to stand by our principles and give only the best of service
                 </p>
          </Header>
-
+         <ContentGrid>
+              <Box>
+                 <Grid container spacing={2}>
+                    <Grid item xs={6} md={4}>
+                        <Item>
+                           <Image
+                              src={sa}
+                           />
+                           <h2>Quality</h2>
+                           <p>
+                           We ensure that all our course contents are screened to the maximum to ensure that the best and only the best quality is shown.
+                           </p>
+                        </Item>
+                    </Grid>
+                    <Grid h1 xs={6} md={4}>
+                    <Item>
+                        <Image
+                              src={sa}
+                           />
+                           <h2>Quality</h2>
+                           <p>
+                           We ensure that all our course contents are screened to the maximum to ensure that the best and only the best quality is shown.
+                           </p>
+                        </Item>
+                    </Grid>
+                    <Grid h1 xs={6} md={4}>
+                        <h1>xs=6 md=4</h1>
+                    </Grid>
+                 </Grid>
+              </Box>
+         </ContentGrid>
     </ServicePage>
   )
 }
