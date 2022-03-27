@@ -11,7 +11,7 @@ const LearnStyled=styled.div`
 
   @media (max-width:640px){
       width: 90%;
-      margin-top: 100px;
+      margin-top: 180px;
   }
 `
 const LeftItem=styled.div`

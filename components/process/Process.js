@@ -16,7 +16,7 @@ const ServicePage=styled.div`
     position: relative;
     @media (max-width:500px){
         width: 90%;
-        margin-top: 60px;
+        margin-top: 180px;
     }
 `
 
