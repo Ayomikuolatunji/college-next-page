@@ -70,7 +70,7 @@ const Main=styled.div`
     border: 1.4px solid rgba(251, 56, 70, 0.6);
     box-sizing: border-box;
     border-radius: 55px;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
     color: rgba(251, 56, 70, 0.6);
     border-radius: 7px;
     padding: 15px 30px;
