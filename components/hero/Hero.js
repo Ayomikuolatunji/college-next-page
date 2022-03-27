@@ -18,7 +18,7 @@ const  HeroMain=styled.div`
     position: relative;
     @media (max-width:500px){
         width: 90%;
-        margin-top: 20px;
+        margin-top: 90px;
     }
 `
 const SideBar=styled.div`

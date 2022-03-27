@@ -5,6 +5,7 @@ import Hero from '../components/hero/Hero';
 import BoxFloating from '../layout/BoxFloating';
 import Process from '../components/process/Process';
 import Downlaod from '../components/dowload/Downlaod';
+import Learn from '../components/Learn/Learn';
 export default function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ export default function Home() {
           <DefaultHeader>
             <Hero/>
             <Services/>
+             <Learn/>
             <Process/>
             <Downlaod/>
 
