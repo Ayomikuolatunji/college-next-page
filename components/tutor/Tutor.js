@@ -23,8 +23,12 @@ const Main=styled.div`
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
+    
     /* or 167% */
     color: #7D7987;
+  }
+  .content{
+      margin-top: -120px;
   }
   .content button{
       border: 1px solid red;
@@ -41,13 +45,16 @@ export default function Tutor() {
          <Box>
              <Grid container xs={6} style={{margin:"auto"}}>
                  <Main>
-                     <div className='max-w-full w-11/12 mx-auto'>
+                     <div className="titlee">
+                         <h1>Become a Tutor</h1>
+                     </div>
+                     <div className='max-w-full mx-auto'>
                          <Image
                            src={tutor}
                            alt={"tutor png"}
                          />
                      </div>
-                     <div className="content mt-1 sm:text-center">
+                     <div className="content  sm:text-center">
                          <p>
                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fuga amet incidunt ducimus excepturi odit molestiae sed illum voluptatem provident, id laboriosam. Ab, iusto quam exercitationem magni, ea nisi molestias soluta facilis incidunt non dignissimos illo eligendi assumenda necessitatibus rem aliquam pariatur, vero dolores aut iure voluptas asperiores. Quibusdam quae exercitationem ullam maxime nesciunt ea dolorem obcaecati voluptatibus eveniet facere?
                          </p>
