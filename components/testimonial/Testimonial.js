@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components"
+
+
+const TesTimonialstyle=styled.div`
+
+
+`
+const Title=styled.div`
+  
+`
 export default class Testimonial extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +34,10 @@ export default class Testimonial extends Component {
       autoplaySpeed: 2000,
     };
     return (
-      <div>
+      <TesTimonialstyle>
+          <Title>
+
+          </Title>
         <Slider ref={c => (this.slider = c)} {...settings}>
           <div key={1}>
             <h3>1</h3>
@@ -42,7 +54,7 @@ export default class Testimonial extends Component {
             Next
           </button>
         </div>
-      </div>
+      </TesTimonialstyle>
     );
   }
 }
