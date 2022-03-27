@@ -4,10 +4,27 @@ import styled from "styled-components"
 
 
 const TesTimonialstyle=styled.div`
-
+    width: 80%;
+    height: 425px;
+    margin:30px  auto;
+    background: linear-gradient(208.18deg, #FB3846 9.05%, #B84A51 76.74%);
+    border-radius: 24px;
 
 `
 const Title=styled.div`
+    padding: 20px 0;
+    text-align: center;
+
+    h1{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 48px;
+        /* identical to box height, or 133% */
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+    }
   
 `
 export default class Testimonial extends Component {
@@ -36,7 +53,7 @@ export default class Testimonial extends Component {
     return (
       <TesTimonialstyle>
           <Title>
-
+                <h1>See what people are saying about College</h1>
           </Title>
         <Slider ref={c => (this.slider = c)} {...settings}>
           <div key={1}>
