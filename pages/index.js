@@ -7,6 +7,8 @@ import Process from '../components/process/Process';
 import Downlaod from '../components/dowload/Downlaod';
 import Learn from '../components/Learn/Learn';
 import Tutor from '../components/tutor/Tutor';
+import Course from '../components/courses/Course';
+
 export default function Home() {
   return (
     <div>
@@ -23,7 +25,7 @@ export default function Home() {
             <Process/>
             <Downlaod/>
             <Tutor/>
-
+            <Course/>
                {/* floating containers */}
             <BoxFloating/>
           </DefaultHeader>

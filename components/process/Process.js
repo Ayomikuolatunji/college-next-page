@@ -82,11 +82,8 @@ const Item=styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+  
 
-    @media (max-width:640px){
-        margin-top: 10px;
-    }
     h2{
         font-family: 'Lato';
         font-style: normal;
@@ -112,6 +109,7 @@ const Item=styled.div`
         line-height: 28px;
         color: #7D7987;
         mix-blend-mode: normal;
+        text-align: center;
     }
 `
 export default function Process() {
@@ -131,8 +129,8 @@ export default function Process() {
                               width={95}
                               height={95}
                            />
+                             <h1>1</h1>
                             <h2>Create Account </h2>
-                            <h1>1</h1>
                             <p>
                             Set up your account with a few quick and easy steps for access to the services
                             </p>
@@ -146,8 +144,8 @@ export default function Process() {
                               width={95}
                               height={95}
                            />
+                            <h1>2</h1>
                            <h2>Select Course </h2>
-                           <h1>2</h1>
                            <p>
                            A list of courses would be displayed based on your institution and level selected
                            </p>
@@ -161,8 +159,8 @@ export default function Process() {
                               width={95}
                               height={95}
                            />
+                            <h1>3</h1>
                            <h2>Subscribe</h2>
-                           <h1>3</h1>
                            <p>
                            Click the subscribe button and pay the charge for the selected course amd enjoy
                            </p>
