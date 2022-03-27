@@ -24,9 +24,16 @@ const Title=styled.div`
         /* identical to box height, or 133% */
         color: #FFFFFF;
         mix-blend-mode: normal;
+        margin-top: 40px;
     }
-  
 `
+const data=[
+    {
+        name:"Abraham Rashford",
+        school:"Fupre",
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data."
+    }
+]
 export default class Testimonial extends Component {
   constructor(props) {
     super(props);
