@@ -55,7 +55,7 @@ export default function Learn() {
                     </LeftItem>
                </Grid>
                <Grid item md={6} xs={12}>
-                   <div>
+                   <div className='w-full flex justify-center items-center'>
                        <Image 
                         src={learn}
                         alt={"learn png"}

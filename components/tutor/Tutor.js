@@ -43,8 +43,7 @@ const Main=styled.div`
         color: #1F1534;
         position: relative;
         mix-blend-mode: normal;
-        margin-bottom: 20px;
-
+      
         :after{
             content:"";
             position: absolute;
@@ -67,11 +66,11 @@ const Main=styled.div`
       }
   }
   .content button{
-    border: 1.4px solid rgba(251, 56, 70, 0.6);
+    border: 1.4px solid rgba(251, 56, 70, 0.8);
     box-sizing: border-box;
     border-radius: 55px;
     margin: 30px auto 0 auto;
-    color: rgba(251, 56, 70, 0.6);
+    color: rgba(251, 56, 70, 0.8);
     border-radius: 7px;
     padding: 15px 30px;
     :hover{
@@ -97,9 +96,9 @@ export default function Tutor() {
                            alt={"tutor png"}
                          />
                      </div>
-                     <div className="content  sm:text-center text-justify">
+                     <div className="content  sm:text-center text-justify flex justify-center flex-col">
                          <p>
-                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fuga amet incidunt ducimus excepturi odit molestiae sed illum voluptatem provident, id laboriosam. Ab, iusto quam exercitationem magni, ea nisi molestias soluta facilis incidunt non dignissimos illo eligendi assumenda necessitatibus rem aliquam pariatur, vero dolores aut iure voluptas asperiores. Quibusdam quae exercitationem ullam maxime nesciunt ea dolorem obcaecati voluptatibus eveniet facere?
+                           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fuga amet incidunt ducimus excepturi odit molestiae sed illum voluptatem provident, id laboriosam. Ab, iusto quam exercitationem magni, ea nisi molestias soluta facilis incidunt non dignissimos illo eligendi assumenda necessitatibus rem aliquam pariatur.
                          </p>
                          <button>Sign up</button>
                      </div>
