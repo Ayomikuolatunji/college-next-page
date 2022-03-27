@@ -8,6 +8,7 @@ import Downlaod from '../components/dowload/Downlaod';
 import Learn from '../components/Learn/Learn';
 import Tutor from '../components/tutor/Tutor';
 import Course from '../components/courses/Course';
+import Testimonial from '../components/testimonial/Testimonial';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
             <Downlaod/>
             <Tutor/>
             <Course/>
+            <Testimonial/>
                {/* floating containers */}
             <BoxFloating/>
           </DefaultHeader>
