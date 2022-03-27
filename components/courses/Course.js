@@ -80,7 +80,7 @@ const Item=styled.div`
         /* identical to box height, or 175% */
         color: #7D7987;
         mix-blend-mode: normal;
-        margin: 8px 0;
+   
 
       }
       .btn{
@@ -143,59 +143,67 @@ export default function Course() {
                               />
                               <BsPlayCircle className='absolute top-1/2 text-5xl left-1/2 -translate-x-1/2 -translate-y-1/2 btn'/>
                           </div>
-                          <h1>Introduction to General Physics PHY111</h1>
-                          <h3> By Emmanuel King..</h3>
-                          <div className="start px-2">
-                             <Image
-                               src={cs1}
-                               alt="imaage-cs1"
-                             />
-                          </div>
-                          <div className="play-course px-2 mt-4">
-                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
-                          </div>
+                        <div className="py-8">
+                          <h1>Introduction to General Chemistry CHM111</h1>
+                            <h3> By Emmanuel King..</h3>
+                            <div className="start px-2">
+                              <Image
+                                src={cs1}
+                                alt="imaage-cs1"
+                              />
+                            </div>
+                            <div className="play-course px-2 mt-4">
+                                <button className='text-red-500'>Play course <BsArrowRight className="text-red-500 inline ml-3 text-2xl"/></button>
+                            </div>
+                        </div>
                      </Item>
                  </Grid>
                  <Grid item md={4} xs={12}>
                      <Item>
-                          <div className="img-container">
+                          <div className="img-container relative">
                               <Image
                                src={c2}
                                alt={"img-c1"}
                               />
+                               <BsPlayCircle className='absolute top-1/2 text-5xl left-1/2 -translate-x-1/2 -translate-y-1/2 btn'/>
                           </div>
-                          <h1>Introduction to General Physics PHY111</h1>
-                          <h3> By Emmanuel King..</h3>
-                          <div className="start px-2">
-                             <Image
-                               src={cs2}
-                               alt="imaage-cs1"
-                             />
-                          </div>
-                          <div className="play-course px-2 mt-4">
-                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
+                          <div className='py-8'>
+                            <h1>Introduction to General Computer CSC211</h1>
+                            <h3> By Emmanuel King..</h3>
+                            <div className="start px-2">
+                              <Image
+                                src={cs2}
+                                alt="imaage-cs1"
+                              />
+                            </div>
+                            <div className="play-course px-2 mt-4">
+                                <button className='text-red-500'>Play course <BsArrowRight className="text-red-500 inline ml-3 text-2xl"/></button>
+                            </div>
                           </div>
                      </Item>
                  </Grid>
                  <Grid item md={4} xs={12}>
                      <Item>
-                          <div className="img-container">
+                          <div className="img-container relative">
                               <Image
                                src={c3}
                                alt={"img-c1"}
                               />
+                               <BsPlayCircle className='absolute top-1/2 text-5xl left-1/2 -translate-x-1/2 -translate-y-1/2 btn'/>
                           </div>
+                         <div className='py-8'>
                           <h1>Introduction to General Physics PHY111</h1>
-                          <h3> By Emmanuel King..</h3>
-                          <div className="start px-2">
-                             <Image
-                               src={cs2}
-                               alt="imaage-cs1"
-                             />
-                          </div>
-                          <div className="play-course px-2 mt-4">
-                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
-                          </div>
+                            <h3> By Emmanuel King..</h3>
+                            <div className="start px-2">
+                              <Image
+                                src={cs2}
+                                alt="imaage-cs1"
+                              />
+                            </div>
+                            <div className="play-course px-2 mt-4">
+                                <button className='text-red-500'>Play course <BsArrowRight className="text-red-500 inline ml-3 text-2xl"/></button>
+                            </div>
+                         </div>
                      </Item>
                  </Grid>
             </Grid>

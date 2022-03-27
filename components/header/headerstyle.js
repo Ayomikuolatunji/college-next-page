@@ -100,7 +100,7 @@ export const OverlayMenu = styled.ul`
   list-style: none;
   position: fixed;
   left: 50%;
-  top: 45%;
+  top: 35%;
   transform: translate(-50%, -50%);
    z-index: 999;
   li {
