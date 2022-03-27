@@ -9,7 +9,7 @@ import c3 from "../../public/img/c3.png"
 import cBg from "../../public/img/cBg.png"
 import cs1 from "../../public/img/cs1.png"
 import cs2 from "../../public/img/cs2.png"
-
+import element from "../../public/img/element.png"
 
 const CoursesStyle=styled.div`
    width: 70%;
@@ -211,6 +211,12 @@ export default function Course() {
         <div className="bg-background absolute top-0 right-0 -z-10">
           <Image
             src={cBg}
+            alt="bg"
+          />
+        </div>
+        <div className="bg-background absolute top-0 left-0 -z-10 mt-10">
+          <Image
+            src={element}
             alt="bg"
           />
         </div>
