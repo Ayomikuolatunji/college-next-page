@@ -1,6 +1,7 @@
 import { Box, Grid } from '@mui/material';
 import Image from 'next/image';
 import React from 'react'
+import {BsPlayCircle,BsArrowRight} from "react-icons/bs"
 import styled from "styled-components";
 import c1 from "../../public/img/c1.png"
 import c2 from "../../public/img/c2.png"
@@ -14,6 +15,11 @@ const CoursesStyle=styled.div`
    width: 70%;
    margin: 30px auto 40px auto;
    position: relative;
+
+   @media (max-width:640px){
+     width: 80%;
+     margin-top: 160px;
+   }
 `
 const Title=styled.div`
      margin: 30px;
@@ -45,12 +51,14 @@ const Title=styled.div`
 `
 const Item=styled.div`
       width: 350px;
-      height: 412px;
+      height: auto;
       background: #FFFFFF;
       /* drop shadow */
       box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
       border-radius: 20px; 
-
+        @media (max-width:640px){
+          margin-top: 30px;
+        }
       h1{
         font-family: 'Lato';
         font-style: normal;
@@ -60,6 +68,7 @@ const Item=styled.div`
         /* or 152% */
         color: #000000;
         mix-blend-mode: normal;
+        padding:0 8px;
       }
       h3{
         font-family: 'Lato';
@@ -67,11 +76,54 @@ const Item=styled.div`
         font-weight: 300;
         font-size: 16px;
         line-height: 28px;
+        padding: 0 8px;
         /* identical to box height, or 175% */
         color: #7D7987;
         mix-blend-mode: normal;
         margin: 8px 0;
 
+      }
+      .btn{
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        text-align: center;
+        text-decoration: none;
+        animation: glowing 1300ms infinite;
+
+         @keyframes glowing {
+            0% {
+              background-color: #2ba805;
+              box-shadow: 0 0 3px #2ba805;
+            }
+            50% {
+              background-color: #49e819;
+              box-shadow: 0 0 10px #49e819;
+            }
+            100% {
+              background-color: #2ba805;
+              box-shadow: 0 0 3px #2ba805;
+            }
+        }
+         @keyframes glowing {
+            0% {
+              background-color: #2ba805;
+              box-shadow: 0 0 5px #2ba805;
+            }
+            50% {
+              background-color: #49e819;
+              box-shadow: 0 0 20px #49e819;
+            }
+            100% {
+              background-color: #2ba805;
+              box-shadow: 0 0 5px #2ba805;
+            }
+          }
       }
 `
 export default function Course() {
@@ -84,24 +136,23 @@ export default function Course() {
             <Grid container div columns={12}>
                  <Grid item md={4} xs={12}>
                      <Item>
-                          <div className="img-container">
+                          <div className="img-container relative">
                               <Image
                                src={c1}
                                alt={"img-c1"}
                               />
+                              <BsPlayCircle className='absolute top-1/2 text-5xl left-1/2 -translate-x-1/2 -translate-y-1/2 btn'/>
                           </div>
                           <h1>Introduction to General Physics PHY111</h1>
                           <h3> By Emmanuel King..</h3>
-                          <div className="start">
+                          <div className="start px-2">
                              <Image
                                src={cs1}
                                alt="imaage-cs1"
                              />
                           </div>
-
-
-                          <div className="play-course">
-                              <button>Play course</button>
+                          <div className="play-course px-2 mt-4">
+                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
                           </div>
                      </Item>
                  </Grid>
@@ -115,11 +166,14 @@ export default function Course() {
                           </div>
                           <h1>Introduction to General Physics PHY111</h1>
                           <h3> By Emmanuel King..</h3>
-                          <div className="start">
+                          <div className="start px-2">
                              <Image
                                src={cs2}
                                alt="imaage-cs1"
                              />
+                          </div>
+                          <div className="play-course px-2 mt-4">
+                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
                           </div>
                      </Item>
                  </Grid>
@@ -133,11 +187,14 @@ export default function Course() {
                           </div>
                           <h1>Introduction to General Physics PHY111</h1>
                           <h3> By Emmanuel King..</h3>
-                          <div className="start">
+                          <div className="start px-2">
                              <Image
                                src={cs2}
                                alt="imaage-cs1"
                              />
+                          </div>
+                          <div className="play-course px-2 mt-4">
+                              <button>Play course <BsArrowRight className="text-red-500 inline ml-5 text-3xl"/></button>
                           </div>
                      </Item>
                  </Grid>

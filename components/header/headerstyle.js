@@ -84,11 +84,12 @@ export const Line = styled.span`
 `;
 
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   height: ${props => (props.open ? "50vh" : 0)};
   width: 100vw;
   background-color: black;
   transition: height 0.4s ease-in-out;
+  z-index: 999;
 
   @media (min-width: 769px) {
     display: none;
@@ -97,11 +98,11 @@ export const Overlay = styled.div`
 
 export const OverlayMenu = styled.ul`
   list-style: none;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
-
+   z-index: 999;
   li {
     opacity: ${props => (props.open ? 1 : 0)};
     font-size: 25px;
