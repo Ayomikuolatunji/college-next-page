@@ -7,7 +7,7 @@ import google from "../../public/img/google.png"
 import download from "../../public/img/download.png"
 
 const DownloadStyle=styled.div`
-     width: 80%;
+     width: 65%;
      max-width: 100%;
      margin: auto;
 
@@ -29,6 +29,17 @@ const Item=styled.div`
         color: #000000;
         mix-blend-mode: normal;
     }
+    p{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+        margin-top: 10px;
+        color: #7D7987;
+        mix-blend-mode: normal;
+    }
 `
 export default function Downlaod() {
   return (
@@ -42,7 +53,7 @@ export default function Downlaod() {
                            with College app you have the ability to download 
                             courses on the go with full access to watch all downloaded videos at your own pace and time
                            </p>
-                           <button>
+                           <button className='mt-5'>
                                <Image
                                   src={google}
                                   alt={"googel playstore"}

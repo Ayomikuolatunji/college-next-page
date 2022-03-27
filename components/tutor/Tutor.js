@@ -2,7 +2,7 @@ import { Box, Grid } from '@mui/material';
 import Image from 'next/image';
 import React from 'react';
 import styled from "styled-components";
-import tutor from "../../public/img/unsplash_-2vD8lIhdnw.png"
+import tutor from "../../public/img/tutor.png"
 
 
 const TutorStyle=styled.div`
@@ -26,6 +26,13 @@ const Main=styled.div`
     /* or 167% */
     color: #7D7987;
   }
+  .content button{
+      border: 1px solid red;
+      color: #000;
+      padding: 10px 30px;
+      margin-top: 30px;
+      border-radius: 7px;
+  }
 
 `
 export default function Tutor() {
@@ -34,13 +41,13 @@ export default function Tutor() {
          <Box>
              <Grid container xs={6} style={{margin:"auto"}}>
                  <Main>
-                     <div className='max-w-full w-7/12 mx-auto'>
+                     <div className='max-w-full w-11/12 mx-auto'>
                          <Image
                            src={tutor}
                            alt={"tutor png"}
                          />
                      </div>
-                     <div className="content mt-3 ">
+                     <div className="content mt-1 sm:text-center">
                          <p>
                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fuga amet incidunt ducimus excepturi odit molestiae sed illum voluptatem provident, id laboriosam. Ab, iusto quam exercitationem magni, ea nisi molestias soluta facilis incidunt non dignissimos illo eligendi assumenda necessitatibus rem aliquam pariatur, vero dolores aut iure voluptas asperiores. Quibusdam quae exercitationem ullam maxime nesciunt ea dolorem obcaecati voluptatibus eveniet facere?
                          </p>
