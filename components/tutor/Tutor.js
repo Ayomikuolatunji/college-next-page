@@ -67,11 +67,18 @@ const Main=styled.div`
       }
   }
   .content button{
-      border: 1px solid red;
-      color: #000;
-      padding: 10px 30px;
-      margin-top: 30px;
-      border-radius: 7px;
+    border: 1.4px solid rgba(251, 56, 70, 0.6);
+    box-sizing: border-box;
+    border-radius: 55px;
+    margin-top: 30px;
+    color: rgba(251, 56, 70, 0.6);
+    border-radius: 7px;
+    padding: 15px 30px;
+    :hover{
+        background-color: #FB3846;
+        transition: all 0.5 ease;
+        color:#FFF;
+    }
   }
 
 `
@@ -90,7 +97,7 @@ export default function Tutor() {
                            alt={"tutor png"}
                          />
                      </div>
-                     <div className="content  sm:text-center">
+                     <div className="content  sm:text-center text-justify">
                          <p>
                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur fuga amet incidunt ducimus excepturi odit molestiae sed illum voluptatem provident, id laboriosam. Ab, iusto quam exercitationem magni, ea nisi molestias soluta facilis incidunt non dignissimos illo eligendi assumenda necessitatibus rem aliquam pariatur, vero dolores aut iure voluptas asperiores. Quibusdam quae exercitationem ullam maxime nesciunt ea dolorem obcaecati voluptatibus eveniet facere?
                          </p>
