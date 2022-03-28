@@ -6,13 +6,14 @@ import styled from "styled-components"
 
 const TesTimonialstyle=styled.div`
     width: 70%;
-    height: 425px;
+    height: auto;
     margin:30px  auto;
     background: linear-gradient(208.18deg, #FB3846 9.05%, #B84A51 76.74%);
     border-radius: 24px;
 
     @media (max-width:640px){
         width: 94%;
+        margin-top: 100px;
     }
 
 `
@@ -68,11 +69,21 @@ const Left=styled.div`
 `
 
 const Right=styled.div`
-
+   h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    /* or 158% */
+    color: rgba(255, 255, 255, 0.9);
+    mix-blend-mode: normal;
+   }
 `
 
 const SliderStyle=styled.div`
   width: 80%;
+  padding: 30px 0 60px 0;
   margin:30px auto;
 `
 const data=[
@@ -98,15 +109,8 @@ const data=[
 export default class Testimonial extends Component {
   constructor(props) {
     super(props);
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
   }
-  next() {
-    this.slider.slickNext();
-  }
-  previous() {
-    this.slider.slickPrev();
-  }
+
   render() {
     const settings = {
       dots: true,
@@ -117,6 +121,7 @@ export default class Testimonial extends Component {
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
+      fade:true
     };
     return (
       <TesTimonialstyle>
@@ -125,10 +130,10 @@ export default class Testimonial extends Component {
           </Title>
           <SliderStyle>
                 <Slider ref={c => (this.slider = c)} {...settings}>
-                {data?.map(each=>{
-                    return <Box>
+                {data?.map((each,i)=>{
+                    return <Box key={i}>
                         <Grid container columns={12}>
-                                <Grid md={12} xs={12}>
+                                <Grid md={6} xs={12}>
                                     <Left>
                                             <div className="img">
                                                 <img
@@ -143,9 +148,11 @@ export default class Testimonial extends Component {
                                             </div>
                                     </Left>
                                 </Grid>
-                                <Grid md={12} xs={12}>
+                                <Grid md={6} xs={12}>
                                     <Right>
-                                        
+                                        <h1>
+                                            {each.testimony}
+                                        </h1>
                                     </Right>
                                 </Grid>
                         </Grid>
@@ -153,14 +160,6 @@ export default class Testimonial extends Component {
                 })}
                 </Slider>
           </SliderStyle>
-        <div style={{ textAlign: "center" }}>
-          <button className="button" onClick={this.previous}>
-            Previous
-          </button>
-          <button className="button" onClick={this.next}>
-            Next
-          </button>
-        </div>
       </TesTimonialstyle>
     );
   }
