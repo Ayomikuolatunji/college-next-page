@@ -7,7 +7,7 @@ import logo from "../../public/img/MAIN LOGO.png"
 const Footerstyle=styled.div`
     position: relative;
     width: 100%;
-    height: 360px;
+    padding: 0 0 100px 0;
     background: rgba(251, 56, 70, 0.9);
     margin-top: 200px;
 `
@@ -31,7 +31,7 @@ const FooterWrapper=styled.div`
     /* or 156% */
     color: #FFFFFF;
     mix-blend-mode: normal;
-    margin-top: 10px;
+ 
     @media (max-width:640px){
         font-weight: 300;
     }
@@ -70,7 +70,7 @@ export default function Footer() {
                             </p>
                         </Grid>
                         <Grid md={3} xs={6}>
-                             <ul className='sm:ml-24'>
+                             <ul className='sm:ml-24 mt-16'>
                                  <li>About us</li>
                                  <li>Contact us</li>
                                  <li>Why us</li>
@@ -78,7 +78,7 @@ export default function Footer() {
                              </ul>
                         </Grid>
                         <Grid md={3} xs={6}>
-                             <ul className='sm:ml-24'>
+                             <ul className='sm:ml-24 mt-16'>
                                  <li>Investor</li>
                                  <li>Terms and condition</li>
                                  <li>Instructsion</li>
@@ -86,7 +86,7 @@ export default function Footer() {
                              </ul>
                         </Grid>
                         <Grid md={3} xs={6}>
-                        <ul className='sm:ml-24'>
+                        <ul className='sm:ml-24 sm:mt-16'>
                                  <li>Help center</li>
                                  <li>Contact support</li>
                              </ul>

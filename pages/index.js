@@ -10,6 +10,9 @@ import Tutor from '../components/tutor/Tutor';
 import Course from '../components/courses/Course';
 import Testimonial from '../components/testimonial/Testimonial';
 import Footer from '../components/footer/Footer';
+import ScrollToUp from "../layout/ScrollToUp"
+
+
 
 export default function Home() {
   return (
@@ -29,6 +32,7 @@ export default function Home() {
             <Tutor/>
             <Course/>
             <Testimonial/>
+            <ScrollToUp/>
             <Footer/>
                {/* floating containers */}
             <BoxFloating/>
