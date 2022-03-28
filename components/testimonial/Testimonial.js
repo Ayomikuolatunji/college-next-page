@@ -33,7 +33,7 @@ const Title=styled.div`
     }
 `
 const Left=styled.div`
-
+   display: flex;
 `
 
 const Right=styled.div`
@@ -42,7 +42,7 @@ const Right=styled.div`
 
 const SliderStyle=styled.div`
   width: 80%;
-  margin: auto;
+  margin:30px auto;
 `
 const data=[
     {
@@ -99,12 +99,15 @@ export default class Testimonial extends Component {
                         <Grid container columns={12}>
                                 <Grid md={12}>
                                     <Left>
-                                            <div className="img rounded-full border-4 border-red w-2/4">
+                                            <div className="img">
                                                 <img
                                                 src={each.img}
                                                 alt="testimonial img"
-                                                style={{borderRadius: "100%"}}
+                                                 className="rounded-full border-4 border-white"
                                                 />
+                                            </div>
+                                            <div className="title">
+                                                
                                             </div>
                                     </Left>
                                 </Grid>
