@@ -88,29 +88,31 @@ export default class Testimonial extends Component {
           <Title>
                 <h1>See what people are saying about College</h1>
           </Title>
-        <Slider ref={c => (this.slider = c)} {...settings}>
-           {data?.map(each=>{
-               return <Box>
-                   <Grid container columns={12}>
-                          <Grid md={12}>
-                               <Left>
-                                    <div className="img">
-                                        <Image
-                                          src={t1}
-
-                                        />
-                                    </div>
-                               </Left>
-                          </Grid>
-                          <Grid md={12}>
-                               <Right>
-                                   
-                               </Right>
-                          </Grid>
-                   </Grid>
-               </Box>
-           })}
-        </Slider>
+          <SliderStyle>
+                <Slider ref={c => (this.slider = c)} {...settings}>
+                {data?.map(each=>{
+                    return <Box>
+                        <Grid container columns={12}>
+                                <Grid md={12}>
+                                    <Left>
+                                            <div className="img">
+                                                <Image
+                                                src={t1}
+                                                alt="testimonial img"
+                                                />
+                                            </div>
+                                    </Left>
+                                </Grid>
+                                <Grid md={12}>
+                                    <Right>
+                                        
+                                    </Right>
+                                </Grid>
+                        </Grid>
+                    </Box>
+                })}
+                </Slider>
+          </SliderStyle>
         <div style={{ textAlign: "center" }}>
           <button className="button" onClick={this.previous}>
             Previous
