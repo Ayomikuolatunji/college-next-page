@@ -69,15 +69,20 @@ const Left=styled.div`
 `
 
 const Right=styled.div`
+   margin-top: 30px;
    h1{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 29px;
     line-height: 30px;
     /* or 158% */
     color: rgba(255, 255, 255, 0.9);
     mix-blend-mode: normal;
+
+    @media (max-width:640px){
+        font-size: 19px;
+    }
    }
 `
 
@@ -96,13 +101,13 @@ const data=[
     {
         name:"Chika Nonso",
         school:"Fupre",
-        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.I did well in all my previous exams",
         img:"img/t1.png"
     },
      {
         name:"Adams Bayo",
         school:"Fupre",
-        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.College app is amazing",
         img:"img/t1.png"
     }
 ]
@@ -121,7 +126,8 @@ export default class Testimonial extends Component {
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
-      fade:true
+      fade:true,
+      
     };
     return (
       <TesTimonialstyle>
