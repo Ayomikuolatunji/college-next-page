@@ -1,12 +1,11 @@
 import { Box, Grid } from "@mui/material";
-import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components"
-import t1 from "../../public/img/t1.png"
+
 
 const TesTimonialstyle=styled.div`
-    width: 80%;
+    width: 70%;
     height: 425px;
     margin:30px  auto;
     background: linear-gradient(208.18deg, #FB3846 9.05%, #B84A51 76.74%);
@@ -40,24 +39,29 @@ const Left=styled.div`
 const Right=styled.div`
 
 `
+
+const SliderStyle=styled.div`
+  width: 80%;
+  margin: auto;
+`
 const data=[
     {
         name:"Abraham Rashford",
         school:"Fupre",
         testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
-        img:t1
+        img:"img/t1.png"
     },
     {
         name:"Chika Nonso",
         school:"Fupre",
         testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
-        img:t1
+        img:"img/t1.png"
     },
      {
         name:"Adams Bayo",
         school:"Fupre",
         testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
-        img:t1
+        img:"img/t1.png"
     }
 ]
 export default class Testimonial extends Component {
@@ -95,10 +99,11 @@ export default class Testimonial extends Component {
                         <Grid container columns={12}>
                                 <Grid md={12}>
                                     <Left>
-                                            <div className="img">
-                                                <Image
-                                                src={t1}
+                                            <div className="img rounded-full border-4 border-red w-2/4">
+                                                <img
+                                                src={each.img}
                                                 alt="testimonial img"
+                                                style={{borderRadius: "100%"}}
                                                 />
                                             </div>
                                     </Left>
