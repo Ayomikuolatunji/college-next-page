@@ -13,8 +13,8 @@ const Footerstyle=styled.div`
 `
 
 const FooterWrapper=styled.div`
-   width: 75%;
-   padding-top: 40px;
+   width: 70%;
+   padding-top: 80px;
    margin: auto;
    height: auto;
 
@@ -35,6 +35,17 @@ const FooterWrapper=styled.div`
     @media (max-width:640px){
         font-weight: 300;
     }
+   }
+
+   ul li{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 38px;
+    /* or 211% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
    }
 `
 export default function Footer() {
@@ -59,7 +70,7 @@ export default function Footer() {
                             </p>
                         </Grid>
                         <Grid md={3} xs={6}>
-                             <ul>
+                             <ul className='sm:ml-24'>
                                  <li>About us</li>
                                  <li>Contact us</li>
                                  <li>Why us</li>
@@ -67,10 +78,18 @@ export default function Footer() {
                              </ul>
                         </Grid>
                         <Grid md={3} xs={6}>
-
+                             <ul className='sm:ml-24'>
+                                 <li>Investor</li>
+                                 <li>Terms and condition</li>
+                                 <li>Instructsion</li>
+                                 <li>How it works</li>
+                             </ul>
                         </Grid>
                         <Grid md={3} xs={6}>
-
+                        <ul className='sm:ml-24'>
+                                 <li>Help center</li>
+                                 <li>Contact support</li>
+                             </ul>
                         </Grid>
                    </Grid>
                </Box>
