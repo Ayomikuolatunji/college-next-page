@@ -1,7 +1,9 @@
+import { Box, Grid } from "@mui/material";
+import Image from "next/image";
 import React, { Component } from "react";
 import Slider from "react-slick";
 import styled from "styled-components"
-
+import t1 from "../../public/img/t1.png"
 
 const TesTimonialstyle=styled.div`
     width: 80%;
@@ -9,6 +11,10 @@ const TesTimonialstyle=styled.div`
     margin:30px  auto;
     background: linear-gradient(208.18deg, #FB3846 9.05%, #B84A51 76.74%);
     border-radius: 24px;
+
+    @media (max-width:640px){
+        width: 94%;
+    }
 
 `
 const Title=styled.div`
@@ -27,11 +33,31 @@ const Title=styled.div`
         margin-top: 40px;
     }
 `
+const Left=styled.div`
+
+`
+
+const Right=styled.div`
+
+`
 const data=[
     {
         name:"Abraham Rashford",
         school:"Fupre",
-        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data."
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
+        img:t1
+    },
+    {
+        name:"Chika Nonso",
+        school:"Fupre",
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
+        img:t1
+    },
+     {
+        name:"Adams Bayo",
+        school:"Fupre",
+        testimony:"“Wow I love this app and I Love the fact that i can watch videos at my own conviencie without breaking the bank with data.",
+        img:t1
     }
 ]
 export default class Testimonial extends Component {
@@ -63,12 +89,27 @@ export default class Testimonial extends Component {
                 <h1>See what people are saying about College</h1>
           </Title>
         <Slider ref={c => (this.slider = c)} {...settings}>
-          <div key={1}>
-            <h3>1</h3>
-          </div>
-          <div key={2}>
-            <h3>2</h3>
-          </div>
+           {data?.map(each=>{
+               return <Box>
+                   <Grid container columns={12}>
+                          <Grid md={12}>
+                               <Left>
+                                    <div className="img">
+                                        <Image
+                                          src={t1}
+
+                                        />
+                                    </div>
+                               </Left>
+                          </Grid>
+                          <Grid md={12}>
+                               <Right>
+                                   
+                               </Right>
+                          </Grid>
+                   </Grid>
+               </Box>
+           })}
         </Slider>
         <div style={{ textAlign: "center" }}>
           <button className="button" onClick={this.previous}>
